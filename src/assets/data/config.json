@@ -1,0 +1,9 @@
+{
+    "appName": "Superubigeos",
+    "appDB": "ubigeos",
+    "appDbUrl" : "https://a6305753-8857-48ab-8ee2-f7dbf616d804-bluemix.cloudantnosqldb.appdomain.cloud",
+    "appDbUsername": "a6305753-8857-48ab-8ee2-f7dbf616d804-bluemix",
+    "appDbPassword": "ba1b753332d777136876c7eb9a6c5af8218a0390fbe584aef0429b7e9b21a1b5",
+    "appSync": false,
+    "appPerUserDb": true
+}

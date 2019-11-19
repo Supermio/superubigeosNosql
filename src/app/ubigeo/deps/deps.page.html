@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Departamentos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-select value='dep' interface='action-sheet' mode='ios'>
+        <ion-select-option value="dep.doc.ubigeo" *ngFor="let dep of deps" >
+          {{ dep.doc.departamento }}
+        </ion-select-option>
+    </ion-select>
+    <ion-list inset>      
+        <ion-item [routerLink]="'/tabs/ubis/prov/' + dep.doc.ubigeo" detail="true" routerDirection="forward" *ngFor="let dep of deps" >
+          <h2>{{ dep.doc.departamento }}</h2><br>
+          <p>{{ dep.doc.ubigeo }}</p>
+        </ion-item>        
+    </ion-list>    
+</ion-content>

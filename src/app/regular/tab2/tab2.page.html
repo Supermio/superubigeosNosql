@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+    {{ departamento }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list inset>
+    <ion-item [href]="'dist/' + prov.doc.ubigeo" detail="true" *ngFor ="let prov of provs">
+        <h2>{{ prov.doc.provincia }}</h2>
+    </ion-item>    
+  </ion-list>
+</ion-content>

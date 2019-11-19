@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button icon="back"></ion-back-button>
+      </ion-buttons>     
+      <ion-title>
+        {{ departamento + ':'+ provincia }}
+      </ion-title>      
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list inset>
+      <ion-item *ngFor="let dist of dists">
+        <h2>{{ dist.doc.distrito }} </h2>
+        <p>{{ dist.doc.ubigeo }}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  

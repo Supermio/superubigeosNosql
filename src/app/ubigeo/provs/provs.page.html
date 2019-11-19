@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button icon="back"></ion-back-button>
+        </ion-buttons>
+    <ion-title>{{departamento}}</ion-title>    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list inset>
+        <ion-item [routerLink]="'/tabs/ubis/dist/' + prov.doc.ubigeo" detail="true" routerDirection="forward"  *ngFor ="let prov of provs">
+            <h2>{{ prov.doc.provincia }}</h2>
+            <p>{{ prov.doc.ubigeo }}</p>
+        </ion-item>    
+      </ion-list>
+</ion-content>
